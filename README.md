@@ -2,11 +2,12 @@
 
 ## Introduction
 
-I am going to deploy [Qdrant](https://qdrant.tech/) and then working on its scaling. I want to use it in LLM as a service architecture.
+I am going to deploy [Qdrant](https://qdrant.tech/) and then working on its scaling.
+I want to use it in LLM as a service architecture.
 
 ## Deploy
 
-Deploy a signle-node setup using docker:
+Deploy a single-node setup using docker:
 
 ```bash
 docker pull qdrant/qdrant
@@ -15,7 +16,7 @@ docker run -p 6333:6333 -p 6334:6334 \
     qdrant/qdrant
 ```
 
-Under the default configuration all data will be stored in the ./qdrant_storage directory. 
+Under the default configuration all data will be stored in the `./qdrant_storage` directory.
 This will also be the only directory that both the Container and the host machine can both see.
 
 Qdrant is now accessible:
